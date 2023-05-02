@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+.banner{
+    background-image: url("../../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    overflow: hidden;
+} 
+.font-style{ 
+    font-family: 'Bubblegum Sans', cursive;
+
+}
