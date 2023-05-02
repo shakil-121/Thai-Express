@@ -15,7 +15,7 @@ const ChefCard = ({ chef }) => {
             <p>Total Recipe: {Numbersofrecipes}</p>
           </div>
         </div>
-        <div className="card-body border-top bg-dark">
+        <div className="card-body border-top bg-dark d-flex">
           <div className="d-flex align-items-center">
              <p className="mb-0 text-light">{TotalLikes}</p>
              <BiLike className="text-primary"></BiLike>
