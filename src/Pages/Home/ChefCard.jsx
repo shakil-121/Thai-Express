@@ -21,7 +21,7 @@ const ChefCard = ({ chef }) => {
              <BiLike className="text-primary"></BiLike>
           </div>
           <div>
-
+          <button type="button" class="btn btn-primary">View Recipe</button>
           </div>
         </div>
       </div>
