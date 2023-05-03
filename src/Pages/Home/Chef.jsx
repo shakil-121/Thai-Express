@@ -11,7 +11,7 @@ useEffect(()=>{
   
 
     return (
-        <div className='mt-5'>
+        <div className='my-5'>
             <h2 className='text-center mb-5'>OUR ALL CHEF</h2>
             <div style={{width:'90%'}} className='row mx-auto'>
             {

@@ -12,6 +12,7 @@ import Login from "../Pages/Log/Login";
 import Register from "../Pages/Log/Register";
 import TramsCondition from "../Pages/Log/TramsCondition";
 import Error from "../Error/Error";
+import Private from "../Private/Praivate";
 
   const router = createBrowserRouter([
     {
@@ -57,8 +58,7 @@ import Error from "../Error/Error";
         children:[
             {
                 path:'chef/:id', 
-                element:<Recipe></Recipe>,
-                loader:({params})=>fetch(`https://thai-express-server-shakil-121.vercel.app/chef/${params.id}`)
+                element:<Private><Recipe></Recipe></Private>
             }
         ]
     }, 
