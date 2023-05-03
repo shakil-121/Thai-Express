@@ -10,6 +10,7 @@ import Recipe from "../Pages/Recipe/Recipe";
 import LogLayout from "../Layout/LogLayout";
 import Login from "../Pages/Log/Login";
 import Register from "../Pages/Log/Register";
+import TramsCondition from "../Pages/Log/TramsCondition";
 
   const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ import Register from "../Pages/Log/Register";
       {
         path:'/registration', 
         element:<Register></Register>
+      }, 
+      {
+        path:'trams',
+        element:<TramsCondition></TramsCondition>
       }
      ]
 

@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div  className="banner  d-flex px-5">
         <div className="col-7 px-4 py-5">
           <h1 className="text-light mt-5">Thai Food</h1>
-          <h1 style={{fontSize:'45px'}} className="text-light"><span className="font-style">Delicious </span><span className="text-warning font-style">Recipes</span></h1>
+          <h1 style={{fontSize:'45px'}} className="text-light"><span className="font-style">Delicious </span><span style={{color:'rgb(142, 198, 63)'}} className="font-style">Recipes</span></h1>
           <p className="text-light my-3 ">
             inappropriate behavior is often laughed off as “boys will be boys,”
             women face higher conduct standards especially in the workplace.
