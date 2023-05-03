@@ -27,19 +27,19 @@ const AuthProvider = ({ children }) => {
  
   const logOut=()=>{
     return signOut(auth);
-  }
+  };
  
   const passwordreset=(email)=>{ 
   return sendPasswordResetEmail(auth,email)
-  } 
+  }; 
 
   const loginWithGoogle=(googleProvider)=>{ 
     return signInWithPopup(auth,googleProvider)
-  }
+  };
 
   const loginWithGithub=(githubProvider)=>{
     return signInWithPopup(auth,githubProvider)
-  }
+  };
   const authinfo = {
     registration, 
     user,
