@@ -9,7 +9,7 @@ const Nav = () => {
     logOut()
     .then()
     .catch()
-  }
+  };
 
   return (
     <div>
