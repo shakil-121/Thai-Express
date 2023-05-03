@@ -6,7 +6,7 @@ const Register = () => {
 
 
     const acceptTrams=(event)=>{ 
-        setAccepted(event.target.checked)
+        setAccepted(event.target.checked);
        }
     return (
         <div
