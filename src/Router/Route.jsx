@@ -11,6 +11,7 @@ import LogLayout from "../Layout/LogLayout";
 import Login from "../Pages/Log/Login";
 import Register from "../Pages/Log/Register";
 import TramsCondition from "../Pages/Log/TramsCondition";
+import Error from "../Error/Error";
 
   const router = createBrowserRouter([
     {
@@ -60,6 +61,10 @@ import TramsCondition from "../Pages/Log/TramsCondition";
                 loader:({params})=>fetch(`https://thai-express-server-shakil-121.vercel.app/chef/${params.id}`)
             }
         ]
+    }, 
+    {
+      path:'*',
+      element:<Error></Error>
     }
   ]); 
 
