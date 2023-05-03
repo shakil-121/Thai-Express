@@ -1,12 +1,13 @@
 import React from "react";
 import { BiLike } from "react-icons/bi"; 
 import './ChefCard.css'
+import { Link } from "react-router-dom";
 
 const ChefCard = ({ chef }) => {
-  const { ChefPicture, ChefName,Yearsofexperience,Numbersofrecipes,TotalLikes} = chef;
+  const { ChefPicture, ChefName,Yearsofexperience,Numbersofrecipes,TotalLikes,id} = chef;
   return (
-    <div className="col-lg-4 px-auto my-3">
-      <div className="card rounded" style={{width:'18rem'}}>
+    <div className="col-lg-4 px-auto my-3 rounded">
+      <div className="card " style={{width:'18rem'}}>
         <img  src={ChefPicture} className="card-img-top img-fluid" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{ChefName}</h5>
@@ -21,7 +22,7 @@ const ChefCard = ({ chef }) => {
              <BiLike className="text-primary"></BiLike>
           </div>
           <div>
-          <button type="button" class="btn btn-primary">View Recipe</button>
+          <Link to={`/chef/${id}`}><button type="button" class="btn btn-primary">View Recipe</button></Link>
           </div>
         </div>
       </div>
