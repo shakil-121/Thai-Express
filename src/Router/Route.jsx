@@ -13,6 +13,7 @@ import Register from "../Pages/Log/Register";
 import TramsCondition from "../Pages/Log/TramsCondition";
 import Error from "../Error/Error";
 import Private from "../Private/Praivate";
+import Profile from "../Pages/Log/Profile";
 
   const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ import Private from "../Private/Praivate";
       {
         path:'trams',
         element:<TramsCondition></TramsCondition>
+      }, 
+      {
+        path:'/profile', 
+        element:<Profile></Profile>
       }
      ]
 

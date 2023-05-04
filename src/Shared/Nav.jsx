@@ -40,12 +40,17 @@ const navStyles=({isActive})=>{
                 <NavLink style={navStyles} className="text-decoration-none text-dark " to="/blog">
                   Blog
                 </NavLink>
+                <NavLink style={navStyles} className="text-decoration-none px-3 text-dark " to="/registration">
+                  Registration
+                </NavLink>
             </div>
           </div>
              <div>
              {
               user?<div className="d-flex justify-content-center align-items-center">
-              <Image title={user.displayName} style={{height:'50px',width:'50px',border:'5px solid black'}} src={user.photoURL}  roundedCircle />
+              <Link to='/profile'>
+              <Image  title={user.displayName} style={{height:'50px',width:'50px',border:'5px solid black'}} src={user.photoURL}  roundedCircle />
+              </Link>
              {/* <h5 className="mb-0 ms-2">{user.displayName}</h5> */}
               <button onClick={handleLogout} class="btn btn-outline-primary ms-2" type="submit">
               <Link className="text-decoration-none text-dark" to="/login">

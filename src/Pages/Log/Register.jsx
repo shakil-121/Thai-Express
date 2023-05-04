@@ -52,8 +52,8 @@ const Register = () => {
   };
   return (
     <div
-      style={{ width: "35%", margin: "auto", border: "1px solid gray" }}
-      className="loginForm p-4 rounded mt-4"
+      style={{ width: "370px", margin: "auto", border: "1px solid gray" }}
+      className="loginForm p-4 rounded my-4"
     >
       <h6 className="fw-bold text-center">Registration Form</h6>
       <hr className="text-primary fw-bolder" />
