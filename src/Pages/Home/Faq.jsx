@@ -8,7 +8,7 @@ const Faq = () => {
     <div className="row mx-5 my-5"> 
     <h2 className="text-center my-5">Frequently Asked Questions (FAQ)</h2> 
     <hr />
-      <div className="col-6">
+      <div className="col-md-6">
         <Accordion className="pt-5">
           <Accordion.Item eventKey="0">
             <Accordion.Header>What are some popular Thai dishes I should try?</Accordion.Header>
@@ -42,8 +42,8 @@ const Faq = () => {
           </Accordion.Item>
         </Accordion>
       </div>
-      <div className="col-6">
-      <Lottie className="mx-auto" style={{width:'400px',height:'400px'}} animationData={error} loop={true} />
+      <div className="col-md-6">
+      <Lottie className="mx-auto mt-5" style={{width:'200px',height:'200px'}} animationData={error} loop={true} />
       </div>
     </div>
   );

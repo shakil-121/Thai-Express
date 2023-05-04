@@ -1,0 +1,4 @@
+nav a.active{ 
+    font-weight: bold;
+    color: rgb(250, 171, 0);
+}

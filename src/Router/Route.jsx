@@ -25,7 +25,7 @@ import Private from "../Private/Praivate";
         },
         {
             path:'/blog',
-            element:<Blog></Blog>
+            element:<Private><Blog></Blog></Private>
         }, 
         { 
             path:'about', 

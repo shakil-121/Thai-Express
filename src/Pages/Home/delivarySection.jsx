@@ -5,10 +5,10 @@ import { FaPhone } from "react-icons/fa";
 const DelivarySection = () => {
     return (
         <div style={{backgroundColor:'rgb(248, 247, 242)'}} className='my-5 px-5 d-flex'>
-            <div className='pt-5 col-6'>
+            <div className='pt-5 col-md-6'>
                 <img style={{height:'400px',width:'400px'}} className='img-fluid' src={dlv} alt="" />
             </div>
-            <div className='col-6 pt-5'>
+            <div className='col-md-6  pt-5'>
               <p style={{color:'rgb(142, 198, 63)'}} className='pt-5'>WE OFFER</p>
               <h1 className='fw-bold'>Free <span style={{color:'rgb(142, 198, 63)'}}>Delivery!</span></h1>
               <p>Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn nuts salsify bunya pie sprout coriander water.</p>

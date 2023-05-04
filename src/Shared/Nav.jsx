@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import logo from "../assets/Thai Express logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { Image } from "react-bootstrap";
+import  './Nav.css'
+
 const Nav = () => {
   const { user,logOut } = useContext(AuthContext); 
   const handleLogout=()=>{
@@ -11,43 +13,36 @@ const Nav = () => {
     .catch()
   };
 
+const navStyles=({isActive})=>{
+  return {
+    fontWight: isActive?'fw-bold':'none'
+  }
+}
+
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-light px-5">
-        <div class="container-fluid">
+        <div class="container-fluid ">
+          <div className="d-md-flex align-items-center">
           <img style={{ width: "200px" }} src={logo} alt="" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <Link className="text-decoration-none text-dark ps-3" to="/">
+            <div>
+            <NavLink style={navStyles} className="ps-3 text-decoration-none text-dark" to="/">
                   Home
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link
+                </NavLink>
+
+                <NavLink style={navStyles}
                   className="text-decoration-none text-dark px-3"
                   to="/about"
                 >
                   About
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link className="text-decoration-none text-dark " to="/blog">
+                </NavLink>
+
+                <NavLink style={navStyles} className="text-decoration-none text-dark " to="/blog">
                   Blog
-                </Link>
-              </li>
-            </ul>
+                </NavLink>
+            </div>
+          </div>
+             <div>
              {
               user?<div className="d-flex justify-content-center align-items-center">
               <Image title={user.displayName} style={{height:'50px',width:'50px',border:'5px solid black'}} src={user.photoURL}  roundedCircle />
@@ -62,7 +57,8 @@ const Nav = () => {
               </Link>
             </button></>
              }
-          </div>
+             </div>
+
         </div>
       </nav>
     </div>
@@ -70,3 +66,27 @@ const Nav = () => {
 };
 
 export default Nav;
+
+
+
+
+/**
+ * <NavLink style={navStyles} className="text-decoration-none text-dark ps-3" to="/">
+                  Home
+                </NavLink>
+         
+ * 
+ *  <NavLink style={navStyles}
+                  className="text-decoration-none text-dark px-3"
+                  to="/about"
+                >
+                  About
+                </NavLink>
+
+
+                <NavLink style={navStyles} className="text-decoration-none text-dark " to="/blog">
+                  Blog
+                </NavLink>
+ * 
+ * 
+ */
