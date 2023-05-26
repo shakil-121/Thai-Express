@@ -6,9 +6,11 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BiError } from "react-icons/bi";
 import { GithubAuthProvider, GoogleAuthProvider, sendPasswordResetEmail } from "firebase/auth";
+import useTitle from "../../hooks/useTitle";
 
 const Login = () => {
   const [error, setError] = useState(""); 
+  useTitle('Login');
   const location=useLocation(); 
   const navigate=useNavigate()
   const from=location.state?.from?.pathname || '/'

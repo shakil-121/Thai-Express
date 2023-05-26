@@ -4,11 +4,13 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { updateProfile } from "firebase/auth";
+import useTitle from "../../hooks/useTitle";
 
 const Register = () => {
   const [accepted, setAccepted] = useState(false);
   const [error, setError] = useState("");
-  const { registration } = useContext(AuthContext);
+  const { registration } = useContext(AuthContext); 
+  useTitle('Registration')
 
   const handelregistration = (event) => {
     event.preventDefault();

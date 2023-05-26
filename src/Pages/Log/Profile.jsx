@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Button, Image } from "react-bootstrap";
 import { deleteUser } from "firebase/auth";
+import useTitle from "../../hooks/useTitle";
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
-
+  useTitle('Profile');
 
   const deleteaccount=()=>{
     deleteUser(user)

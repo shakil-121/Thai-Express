@@ -22,7 +22,7 @@ const ChefCard = ({ chef }) => {
              <BiLike className="text-primary"></BiLike>
           </div>
           <div>
-          <Link to={`/chef/${id}`}><button type="button" class="btn btn-primary">View Recipe</button></Link>
+          <Link to={`chef/${id}`}><button type="button" class="btn btn-primary">View Recipe</button></Link>
           </div>
         </div>
       </div>

@@ -59,7 +59,7 @@ import Profile from "../Pages/Log/Profile";
     },
     {
         path:'/', 
-        element:<RecipeLayout></RecipeLayout>, 
+        element:<Private><RecipeLayout></RecipeLayout></Private>, 
         children:[
             {
                 path:'chef/:id', 

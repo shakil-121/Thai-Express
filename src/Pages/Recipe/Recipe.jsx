@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import SingleRecipeCard from "./SingleRecipeCard";
 import { BiLike } from "react-icons/bi"; 
 import { useLoaderData, useParams } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 
 const Recipe = () => {
   const [recipes, setRecipes] = useState([]);
   const [chefs, setChefs] = useState([]);
+  useTitle('Recipe')
   const daynamic = useParams();
   const routerId = daynamic.id;
   // console.log(routerId,recipe);

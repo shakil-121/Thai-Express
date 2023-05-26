@@ -11,7 +11,7 @@ This is a react single page application(SPA) with Firebase Authontication.For se
 
 **Server:** Node, Express 
 
-**DevTools:** Github,Vercel
+**DevTools:** Github,Vercel,Firebase
 
 
 ## Project Live Link

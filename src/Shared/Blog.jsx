@@ -1,8 +1,10 @@
 import React from "react";
 import Pdf from "react-to-pdf";
+import useTitle from "../hooks/useTitle";
 
 const Blog = () => { 
-    const ref = React.createRef();
+    const ref = React.createRef(); 
+    useTitle('Blog')
   return (
     <div className="m-5 border border-2 p-5 rounded">
         <div className='my-4 d-flex justify-content-center bg-primary p-3 rounded'>
